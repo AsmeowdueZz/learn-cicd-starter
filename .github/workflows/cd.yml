@@ -21,3 +21,6 @@ jobs:
         
       - name: build binary file
         run: ./scripts/buildprod.sh
+      
+      - name: setup-gcloud 
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-459806/notely-ar-repo/notely .
