@@ -18,6 +18,9 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: "1.23.0"
+
+      - name: build file
+        run: ./scripts/buildprod.sh
         
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
