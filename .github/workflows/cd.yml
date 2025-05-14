@@ -42,7 +42,7 @@ jobs:
 
 
       - name: goose up
-        run: ./scripts/migrateip.sh
+        run: ./scripts/up.sh
 
       - name: Deploy to Cloud Run
         run: |
